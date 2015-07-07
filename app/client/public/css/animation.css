@@ -1,0 +1,156 @@
+/*
+    动画名称：从左进入
+*/
+@keyframes enter_from_left
+{
+    0%{
+        transform: translate3d(-1000px,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+@-moz-keyframes enter_from_left /* Firefox */
+{
+    0%{
+        -moz-transform: translate3d(-1000px,0,0);
+    }
+    100%{
+        -moz-transform: translate3d(0,0,0);
+    }
+}
+@-webkit-keyframes enter_from_left /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: translate3d(-1000px,0,0);
+    }
+    100%{
+        -webkit-transform: translate3d(0,0,0);
+    }
+}
+@-o-keyframes enter_from_left /* Opera */
+{
+    0%{
+        -o-transform: translate3d(-1000px,0,0);
+    }
+    100%{
+        -o-transform: translate3d(0,0,0);
+    }
+}
+/*
+    动画名称：从右侧进入
+*/
+@keyframes enter_from_right
+{
+    0%{
+        transform: translate3d(1000px,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+@-moz-keyframes enter_from_right /* Firefox */
+{
+    0%{
+        -moz-transform: translate3d(1000px,0,0);
+    }
+    100%{
+        -moz-transform: translate3d(0,0,0);
+    }
+}
+@-webkit-keyframes enter_from_right /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: translate3d(1000px,0,0);
+    }
+    100%{
+        -webkit-transform: translate3d(0,0,0);
+    }
+}
+@-o-keyframes enter_from_right /* Opera */
+{
+    0%{
+        -o-transform: translate3d(1000px,0,0);
+    }
+    100%{
+        -o-transform: translate3d(0,0,0);
+    }
+}
+/*
+    动画名称：从上方进入
+*/
+@keyframes enter_from_top
+{
+    0%{
+        transform: translate3d(0,-1000px,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+@-moz-keyframes enter_from_top /* Firefox */
+{
+    0%{
+        -moz-transform: translate3d(0,-1000px,0);
+    }
+    100%{
+        -moz-transform: translate3d(0,0,0);
+    }
+}
+@-webkit-keyframes enter_from_top /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: translate3d(0,-1000px,0);
+    }
+    100%{
+        -webkit-transform: translate3d(0,0,0);
+    }
+}
+@-o-keyframes enter_from_top /* Opera */
+{
+    0%{
+        -o-transform: translate3d(0,-1000px,0);
+    }
+    100%{
+        -o-transform: translate3d(0,0,0);
+    }
+}
+/*
+    动画名称：从下方进入
+*/
+@keyframes enter_from_bottom
+{
+    0%{
+        transform: translate3d(0,1000px,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+@-moz-keyframes enter_from_bottom /* Firefox */
+{
+    0%{
+        -moz-transform: translate3d(0,1000px,0);
+    }
+    100%{
+        -moz-transform: translate3d(0,0,0);
+    }
+}
+@-webkit-keyframes enter_from_bottom /* Safari 和 Chrome */
+{
+    0%{
+        -webkit-transform: translate3d(0,1000px,0);
+    }
+    100%{
+        -webkit-transform: translate3d(0,0,0);
+    }
+}
+@-o-keyframes enter_from_bottom /* Opera */
+{
+    0%{
+        -o-transform: translate3d(0,1000px,0);
+    }
+    100%{
+        -o-transform: translate3d(0,0,0);
+    }
+}

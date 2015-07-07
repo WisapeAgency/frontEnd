@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="../public/css/layout.css" rel="stylesheet"/>
+    <link href="../public/css/font.css" rel="stylesheet"/>
+    <link href="../public/css/animation.css" rel="stylesheet"/>
+    <link href="../public/css/editor_index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="main" class="page">
+        <div class="header">
+            <div class="pull-left">
+                <a class="imgIco-back"></a>
+            </div>
+            <div class="pull-right">
+                <a class="imgIco-preview"></a>
+                <a class="imgIco-category"></a>
+                <a class="imgIco-list"></a>
+                <a class="imgIco-settings"></a>
+            </div>
+        </div>
+        <div html-include="stage_select.html"></div>
+        <!--Story加载区-->
+        <story>
+            ...
+        </story>
+    </div>
+    <!--编辑图片-->
+    <div html-include="editor_image.html"></div>
+    <!--编辑文字-->
+    <div html-include="editor_text.html"></div>
+    <!--故事预览-->
+    <div html-include="story_preview.html"></div>
+    <!--故事页面删除管理-->
+    <div html-include="story_stageMana.html"></div>
+    <!--故事设置-->
+    <div html-include="story_setting.html"></div>
+</body>
+</html>

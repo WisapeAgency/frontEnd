@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="animation.css"/>
+    <script src="../../public/js/jquery2.1.4.min.js"></script>
+    <script src="animation.js"></script>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        symbol{
+            display: block;
+        }
+        .temp{
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            background-color: red;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <stage>
+        <symbol animation="name:enter_from_left,dura:2s,func:ease,delay:0s,count:1" class="temp">123</symbol>
+        <symbol animation="name:enter_from_right,dura:2s,func:ease,delay:2s,count:1" class="temp">123</symbol>
+        <symbol animation="name:enter_from_top,dura:2s,func:ease,delay:4s,count:1" class="temp">123</symbol>
+        <symbol animation="name:enter_from_bottom,dura:2s,func:ease,delay:6s,count:1" class="temp">123</symbol>
+    </stage>
+    <script>
+        var ani = new Animator();
+        ani.play(0);
+    </script>
+</body>
+</html>
