@@ -12,6 +12,17 @@
         symbol{
             display: block;
         }
+        .cirle{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            background-color: red;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            overflow: hidden;
+        }
         .temp{
             width: 100px;
             height: 100px;
@@ -25,10 +36,14 @@
 </head>
 <body>
     <stage>
-        <symbol animation="name:enter_from_left,dura:2s,func:ease,delay:0s,count:1" class="temp">123</symbol>
-        <symbol animation="name:enter_from_right,dura:2s,func:ease,delay:2s,count:1" class="temp">123</symbol>
-        <symbol animation="name:enter_from_top,dura:2s,func:ease,delay:4s,count:1" class="temp">123</symbol>
-        <symbol animation="name:enter_from_bottom,dura:2s,func:ease,delay:6s,count:1" class="temp">123</symbol>
+        <symbol animation="name:enter_from_left|dura:2s|func:ease-in-out|delay:0s|count:1" class="temp">123</symbol>
+        <symbol animation="name:enter_from_right_fadeIn|dura:2s|func:ease-in-out|delay:2s|count:1" class="temp">123</symbol>
+        <symbol animation="name:enter_from_top_tanru|dura:2s|func:ease-in-out|delay:4s|count:1" class="temp">123</symbol>
+        <symbol animation="name:enter_from_bottom_tanru|dura:2s|func:ease-in-out|delay:6s|count:1" class="temp">123</symbol>
+        <symbol animation="name:doudong|dura:0.2s|func:ease|delay:0s|count:5" class="temp">123</symbol>
+        <symbol animation="name:shanshuo|dura:0.8s|func:ease|delay:0s|count:10" class="temp">123</symbol>
+        <symbol animation="name:zhongbai|dura:3s|func:cubic-bezier(0.38, 0.88, 0.73, 0.86)|delay:0s|count:infinite" class="cirle">123</symbol>
+        <symbol animation="name:tuxian|dura:2s|func:ease-in|delay:0s|count:1" class="temp">123</symbol>
     </stage>
     <script>
         var ani = new Animator();

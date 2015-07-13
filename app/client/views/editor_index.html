@@ -4,29 +4,103 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta name="format-detection" content="telephone=no"/>
+    <link href="../public/css/reset.css" rel="stylesheet"/>
     <link href="../public/css/layout.css" rel="stylesheet"/>
     <link href="../public/css/font.css" rel="stylesheet"/>
     <link href="../public/css/animation.css" rel="stylesheet"/>
     <link href="../public/css/editor_index.css" rel="stylesheet"/>
+    <link href="../public/css/stageSelct.css" rel="stylesheet"/>
+    <link href="../public/css/storyStageMana.css" rel="stylesheet"/>
 </head>
 <body>
-    <div id="main" class="page">
+    <div id="main" class="page page-active">
         <div class="header">
             <div class="pull-left">
-                <a class="imgIco-back"></a>
+                <a class="icon-arrow-left"></a>
             </div>
             <div class="pull-right">
-                <a class="imgIco-preview"></a>
-                <a class="imgIco-category"></a>
-                <a class="imgIco-list"></a>
-                <a class="imgIco-settings"></a>
+                <ul class="list-inline">
+                    <li><a class="icon-play"></a></li>
+                    <li><a class="icon-layout"></a></li>
+                    <li><a class="icon-list"></a></li>
+                    <li><a class="icon-settings"></a></li>
+                </ul>
             </div>
         </div>
-        <div html-include="stage_select.html"></div>
+        <!--<div html-include="stage_select.html"></div>-->
+        <div id="stageSelect">
+            <div class="tabnav text-gray">
+                <ul class="list-inline content-box">
+                    <li><a class="text-sm active">CATEGORY1</a></li>
+                    <li><a class="text-sm">CATEGORY2</a></li>
+                    <li><a class="text-sm">CATEGORY3</a></li>
+                    <li><a class="text-sm">CATEGORY4</a></li>
+                    <li><a class="text-sm">CATEGORY5</a></li>
+                </ul>
+            </div>
+            <div class="tabcon">
+                <div class="tabcon-item">
+                    <ul class="list-inline content-box">
+                        <li>
+                            <div class="rel" style="background-image: url('../public/img/temp/stage_example.jpg');">
+                                <span class="icon-tags-new"></span>
+                                <div class="icon-download"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rel" style="background-image: url('../public/img/temp/stage_example.jpg');">
+                                <span class="icon-tags-hot"></span>
+                                <div class="icon-download"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rel" style="background-image: url('../public/img/temp/stage_example.jpg');">
+                                <div class="proccess-bar"><span style="width: 40%"></span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rel" style="background-image: url('../public/img/temp/stage_example.jpg');">
+                                <div class="proccess-bar"><span></span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rel active" style="background-image: url('../public/img/temp/stage_example.jpg');">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!--Story加载区-->
-        <story>
-            ...
-        </story>
+        <div id="storyContainer">
+            <story>
+                <stage>
+                    <symbol name="img1" hammerable="false" type="image" style="position:absolute;top:0;left:0;width:100%;height:100%">
+                        <img style="width:auto;height:100%;left:-17.5%" src="../stage/Rcene/01/img/b1.jpg"/>
+                    </symbol>
+                    <symbol name="text1" hammerable="true" type="text" style="width:80%;margin:0 auto;top:50px;height:36px;z-index:2;">
+                        <p style="font-family:'Acens';color:#ffffff;font-size:24px;font-weight:bold;text-align:center">I love it</p>
+                    </symbol>
+                </stage>
+                <stage>
+                    <symbol name="img1" hammerable="false" type="image" style="position:absolute;top:0;left:0;width:100%;height:100%">
+                        <img style="width:auto;height:100%;left:-17.5%" src="../stage/Rcene/01/img/b1.jpg"/>
+                    </symbol>
+                    <symbol name="text1" hammerable="true" type="text" style="width:80%;margin:0 auto;top:50px;height:36px;z-index:2;">
+                        <p style="font-family:'Acens';color:#ffffff;font-size:24px;font-weight:bold;text-align:center">I love it</p>
+                    </symbol>
+                </stage>
+                <stage>
+                    <symbol name="img1" hammerable="false" type="image" style="position:absolute;top:0;left:0;width:100%;height:100%">
+                        <img style="width:auto;height:100%;left:-17.5%" src="../stage/Rcene/01/img/b1.jpg"/>
+                    </symbol>
+                    <symbol name="text1" hammerable="true" type="text" style="width:80%;margin:0 auto;top:50px;height:36px;z-index:2;">
+                        <p style="font-family:'Acens';color:#ffffff;font-size:24px;font-weight:bold;text-align:center">I love it</p>
+                    </symbol>
+                </stage>
+            </story>
+        </div>
+        <a class="icon-add-stage"></a>
     </div>
     <!--编辑图片-->
     <div html-include="editor_image.html"></div>
@@ -35,8 +109,28 @@
     <!--故事预览-->
     <div html-include="story_preview.html"></div>
     <!--故事页面删除管理-->
-    <div html-include="story_stageMana.html"></div>
+    <!--<div html-include="story_stageMana.html"></div>-->
+    <div id="storyStageMana" class="page">
+        <div class="header">
+            <div class="pull-left">
+                <a class="icon-arrow-left"></a><span class="text-lg">Story List</span>
+            </div>
+            <div class="pull-right">
+                <a class="icon-dustbin"></a>
+            </div>
+        </div>
+        <story>
+        </story>
+    </div>
     <!--故事设置-->
     <div html-include="story_setting.html"></div>
+    <!--脚本-->
+    <!--<script src="../public/js/cordova.js"></script>-->
+    <script src="../public/js/jquery2.1.4.min.js"></script>
+    <script src="../public/js/class.js"></script>
+    <script src="../public/js/hammer.min.js"></script>
+    <script src="../public/js/iscroll-lite.js"></script>
+    <script src="../public/js/animation.js"></script>
+    <script src="../public/js/app-main.js"></script>
 </body>
 </html>

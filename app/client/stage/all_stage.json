@@ -1,0 +1,15 @@
+[{
+    "name":"Rcene",
+    "stages":[{
+        "name":"01"
+    }]
+},{
+    "name":"Photo Layout",
+    "stages":[]
+},{
+    "name":"Image-text",
+    "stages":[]
+},{
+    "name":"Feature",
+    "stages":[]
+}]
