@@ -43,3 +43,11 @@ local.properties
 _sandbox
 
 obj
+
+
+node_modules/
+npm-debug.log
+.idea/
+**/node_modules/
+**/src/
+webpack.config.js
