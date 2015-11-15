@@ -50,4 +50,5 @@ npm-debug.log
 .idea/
 **/node_modules/
 **/src/
-webpack.config.js
+server.js
+dev.js

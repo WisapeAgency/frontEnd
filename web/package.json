@@ -1,5 +1,5 @@
 {
-  "name": "react-sample",
+  "name": "WispageWeb",
   "version": "1.0.0",
   "description": "webpack demo",
   "main": "./src/entry.js",
@@ -23,5 +23,9 @@
     "css-loader": "^0.12.1",
     "sass-loader": "*",
     "less-loader": "*"
+  },
+  "dependencies": {
+    "react-hot-loader": "^1.3.0",
+    "webpack-dev-server": "^1.12.1"
   }
 }
