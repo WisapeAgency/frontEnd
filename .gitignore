@@ -49,6 +49,6 @@ node_modules/
 npm-debug.log
 .idea/
 **/node_modules/
-**/src/
+#**/src/
 server.js
 dev.js
