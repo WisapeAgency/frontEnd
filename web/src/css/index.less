@@ -1,17 +1,17 @@
 .index-header {
-  background: url("../i/bg.png") top center;
-  height: 787px;
+  background: url("../i/bg.png") top center no-repeat;
+  height: 794px;
   width:100%;
 
 
   .w {
-    height: 787px;
+    height: 794px;
     position: relative;
   }
 
   .info {
     position:absolute;
-    left:0px;
+    left:120px;
     top:230px;
 
     .logo {
@@ -25,18 +25,33 @@
       font-size:58px;
       line-height:58px;
       color:#8a5219;
-      margin-top:80px;
+      margin-top:70px;
     }
 
     p {
       font-size:28px;
       line-height: 28px;
       color:#8a5219;
-      margin-top:36px;
+      margin-top:20px;
+    }
+
+    .join {
+      display: block;
+      width:360px;
+      height: 60px;
+      border:2px solid #a17242;
+      box-shadow: 0 4px 4px rgba(0,0,0,0.13);
+      border-radius: 3px;
+      line-height: 60px;
+      text-align: center;
+      font-size:16px;
+      color:#a17242;
+      margin-top:70px;
     }
 
     .download {
-      margin-top:45px;
+      margin-top:20px;
+      margin-left:-5px;
 
       a {
         display: inline-block;
@@ -144,66 +159,38 @@
 
     s {
       display: inline-block;
-      width: 40px;
-      height: 32px;
+      width: 44px;
+      height: 44px;
       background: url("../i/variety-1.png") no-repeat;
       margin-bottom:40px;
+
+      &.ico-2 {
+        background-image:url("../i/variety-2.png");
+      }
+      &.ico-3 {
+        background-image:url("../i/variety-3.png");
+      }
+      &.ico-4 {
+        background-image:url("../i/variety-4.png");
+      }
+      &.ico-5 {
+        background-image:url("../i/variety-5.png");
+      }
+      &.ico-6 {
+        background-image:url("../i/variety-6.png");
+      }
+      &.ico-7 {
+        background-image:url("../i/variety-7.png");
+      }
+      &.ico-8 {
+        background-image:url("../i/variety-8.png");
+      }
     }
 
     p {
       color:#2d3437;
       font-size:18px;
       line-height: 18px;
-    }
-  }
-}
-
-.footer {
-  text-align: center;
-  padding:80px 0;
-
-  .my-links {
-    li {
-      display: inline-block;
-      margin: 0 15px;
-      a {
-        width: 42px;
-        height: 42px;
-        display: block;
-        background: url("../i/fb.png");
-        
-        &:hover {
-          background: url("../i/fb-p.png");
-        }
-      }
-    }
-  }
-
-  .links {
-    margin-top:70px;
-    li {
-      display: inline-block;
-      margin:0 15px;
-      a {
-        font-size:18px;
-        color:#2d3437;
-      }
-    }
-  }
-
-  .cp {
-    margin-top:60px;
-
-    s {
-      display: inline-block;
-      width:41px;
-      height: 31px;
-      background:url('../i/logo-s.png');
-    }
-
-    p {
-      margin-top:20px;
-      font-size:18px;
     }
   }
 }

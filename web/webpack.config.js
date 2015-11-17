@@ -4,18 +4,20 @@
 
 var path = require('path');
 var webpack = require('webpack');
+var config = require('./config');
 //var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 
 module.exports = {
     entry: {
-        server: 'webpack-dev-server/client?http://localhost:3000',
-        dev:'webpack/hot/only-dev-server',
+        //server: 'webpack-dev-server/client?http://localhost:3000',
+        //dev:'webpack/hot/only-dev-server',
         index: path.resolve(__dirname, './src/js/index.js'),
-        partner: path.resolve(__dirname, './src/js/partner.js')
+        partner: path.resolve(__dirname, './src/js/partner.js'),
+        privacy: path.resolve(__dirname, './src/js/privacy.js')
         },
     output: {
         path: path.resolve(__dirname, './assets/js'),
-        publicPath: path.resolve(__dirname, '/frontEnd/web/assets/js'),
+        publicPath: path.resolve(__dirname, config.webroot + '/assets/js'),
         filename: '[name].js'
     },
 

@@ -4,6 +4,7 @@
 require('../css/base.less');
 require('../css/index.less');
 var React = require('react');
+var Footer = require('./footer');
 var $ = require('jquery');
 
 var IndexHeader = React.createClass({
@@ -14,11 +15,12 @@ var IndexHeader = React.createClass({
                     <div className="info">
                         <a href="#" className="logo"></a>
                         <h3>Create and Share</h3>
-                        <p>sunning business story</p>
+                        <p>your stunning business story worldwide</p>
                         <div className="download">
                             <a href="#" className="btn-google">google play</a>
                             <a href="#" className="btn-apk">apk</a>
                         </div>
+                        <a href="" className="join">Join Global Parterners Plan</a>
                     </div>
                     <div className="phone"></div>
                 </div>
@@ -115,37 +117,7 @@ var Variety = React.createClass({
     }
 });
 
-var IndexFooter = React.createClass({
-    render: function(){
-        return (
-            <div className="footer">
-                <div className="w">
-                    <ul  className="my-links">
-                        <li className="my-links-1"><a href=""></a></li>
-                        <li className="my-links-2"><a href=""></a></li>
-                        <li className="my-links-3"><a href=""></a></li>
-                        <li className="my-links-4"><a href=""></a></li>
-                    </ul>
-                    <ul className="links">
-                        <li>
-                            <a href="">Terms of Service</a>
-                        </li>
-                        <li>
-                            <a href="">Privacy of Policy</a>
-                        </li>
-                        <li>
-                            <a href="">Content Speacification</a>
-                        </li>
-                    </ul>
-                    <div className="cp">
-                        <s></s>
-                        <p>@2015 Wisape all rights reserved</p>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-});
+
 
 var Index = React.createClass({
     render: function(){
@@ -154,7 +126,7 @@ var Index = React.createClass({
                 <IndexHeader />
                 <IndexFeature />
                 <Variety />
-                <IndexFooter />
+                <Footer />
             </div>
         );
     }
