@@ -5,7 +5,7 @@ require('../css/base.less');
 require('../css/index.less');
 var React = require('react');
 var Footer = require('./footer');
-var $ = require('jquery');
+var config = require('../../config');
 
 var IndexHeader = React.createClass({
     render: function() {
@@ -17,8 +17,8 @@ var IndexHeader = React.createClass({
                         <h3>Create and Share</h3>
                         <p>your stunning business story worldwide</p>
                         <div className="download">
-                            <a href="#" className="btn-google">google play</a>
-                            <a href="#" className="btn-apk">apk</a>
+                            <a href={config.downloadUrl.google} className="btn-google">google play</a>
+                            <a href={config.downloadUrl.apk} className="btn-apk">apk</a>
                         </div>
                         <a href="" className="join">Join Global Parterners Plan</a>
                     </div>
@@ -135,11 +135,6 @@ var Index = React.createClass({
 
 
 React.render(<Index />, document.body);
-//
-//var img = document.createElement("img");
-//img.src = require("./pic.png");
-//
-//document.body.appendChild(img);
 
 
 

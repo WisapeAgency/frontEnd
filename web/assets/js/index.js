@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/web/assets/js";
+/******/ 	__webpack_require__.p = "/frontEnd/web/assets/js";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -53,13 +53,13 @@
 	__webpack_require__(16);
 	var React = __webpack_require__(36);
 	var Footer = __webpack_require__(192);
-	var $ = __webpack_require__(193);
+	var config = __webpack_require__(194);
 
 	var IndexHeader = React.createClass({
 	    displayName: 'IndexHeader',
 
 	    render: function render() {
-	        return React.createElement('div', { className: 'index-header' }, React.createElement('div', { className: 'w' }, React.createElement('div', { className: 'info' }, React.createElement('a', { href: '#', className: 'logo' }), React.createElement('h3', null, 'Create and Share'), React.createElement('p', null, 'your stunning business story worldwide'), React.createElement('div', { className: 'download' }, React.createElement('a', { href: '#', className: 'btn-google' }, 'google play'), React.createElement('a', { href: '#', className: 'btn-apk' }, 'apk')), React.createElement('a', { href: '', className: 'join' }, 'Join Global Parterners Plan')), React.createElement('div', { className: 'phone' })));
+	        return React.createElement('div', { className: 'index-header' }, React.createElement('div', { className: 'w' }, React.createElement('div', { className: 'info' }, React.createElement('a', { href: '#', className: 'logo' }), React.createElement('h3', null, 'Create and Share'), React.createElement('p', null, 'your stunning business story worldwide'), React.createElement('div', { className: 'download' }, React.createElement('a', { href: config.downloadUrl.google, className: 'btn-google' }, 'google play'), React.createElement('a', { href: config.downloadUrl.apk, className: 'btn-apk' }, 'apk')), React.createElement('a', { href: '', className: 'join' }, 'Join Global Parterners Plan')), React.createElement('div', { className: 'phone' })));
 	    }
 	});
 
@@ -88,11 +88,6 @@
 	});
 
 	React.render(React.createElement(Index, null), document.body);
-	//
-	//var img = document.createElement("img");
-	//img.src = require("./pic.png");
-	//
-	//document.body.appendChild(img);
 
 /***/ },
 /* 1 */,
@@ -21023,6 +21018,7 @@
 	var React = __webpack_require__(36);
 	var $ = __webpack_require__(193);
 	var config = __webpack_require__(194);
+	console.info(config.webroot);
 
 	var Footer = React.createClass({
 	    displayName: 'Footer',
@@ -21033,7 +21029,7 @@
 	        //    var selected = this.state.selected;
 	        //    return <a href="javascript:void(0)" data-order={v} className={(v === this.state.selected) ? 'selected' : ""} onClick={this.handleOnClick}>{item}</a>;
 	        //}, this);
-	        return React.createElement('div', { className: 'footer' }, React.createElement('div', { className: 'w' }, React.createElement('ul', { className: 'my-links' }, React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-1' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-2' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-3' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-4' }))), React.createElement('ul', { className: 'links' }, React.createElement('li', null, React.createElement('a', { href: {} }, 'Terms of Service')), React.createElement('li', null, React.createElement('a', { href: '/web/privacy.html?tabs=1' }, 'Privacy of Policy')), React.createElement('li', null, React.createElement('a', { href: '/web/privacy.html?tabs=2' }, 'Content Speacification'))), React.createElement('div', { className: 'cp' }, React.createElement('s', null), React.createElement('p', null, '@2015 Wisape all rights reserved'))));
+	        return React.createElement('div', { className: 'footer' }, React.createElement('div', { className: 'w' }, React.createElement('ul', { className: 'my-links' }, React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-1' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-2' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-3' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-4' }))), React.createElement('ul', { className: 'links' }, React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=0" }, 'Terms of Service')), React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=1" }, 'Privacy of Policy')), React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=2" }, 'Content Speacification'))), React.createElement('div', { className: 'cp' }, React.createElement('s', null), React.createElement('p', null, '@2015 Wisape all rights reserved'))));
 	    }
 	});
 
@@ -30262,7 +30258,17 @@
 	"use strict";
 
 	module.exports = {
-	    webroot: "/web"
+	    webroot: "/frontEnd/web",
+	    downloadUrl: {
+	        google: "http://baidu.com",
+	        apk: "http://weibo.com"
+	    },
+	    shareUrl: {
+	        email: "",
+	        facebook: "",
+	        twiter: "",
+	        google: ""
+	    }
 	};
 
 /***/ }

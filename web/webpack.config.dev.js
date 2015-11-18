@@ -5,9 +5,10 @@
 var path = require('path');
 var webpack = require('webpack');
 var config = require('./config');
-var debug = process.env.NODE_ENV !== 'production';
 //var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+var debug = process.env.NODE_ENV !== 'dev';
 console.info(debug);
+
 module.exports = {
     entry: {
         //server: 'webpack-dev-server/client?http://localhost:3000',
@@ -35,13 +36,18 @@ module.exports = {
     },
 
     resolve:{
-        extensions:['','.js','.json','.png']
+        extensions:['','.js','.json','.png'],
     },
 
     //插件项
    plugins: [
        //commonsPlugin
        //new webpack.optimize.MinChunkSizePlugin(minSize),
-
+       //new HtmlWebpackPlugin({
+       //    template: './src/a.html',
+       //    filename: 'a',
+       //    inject: 'body',
+       //    chunks: ['vendors', 'a']
+       //})
    ]
 };

@@ -5,6 +5,7 @@ require('../css/base.less');
 var React = require('react');
 var $ = require('jquery');
 var config = require('../../config');
+console.info(config.webroot);
 
 var Footer = React.createClass({
     render: function(){
@@ -24,13 +25,13 @@ var Footer = React.createClass({
                     </ul>
                     <ul className="links">
                         <li>
-                            <a href={{}}>Terms of Service</a>
+                            <a href={config.webroot + "/privacy.html?tabs=0"}>Terms of Service</a>
                         </li>
                         <li>
-                            <a href="/web/privacy.html?tabs=1">Privacy of Policy</a>
+                            <a href={config.webroot + "/privacy.html?tabs=1"}>Privacy of Policy</a>
                         </li>
                         <li>
-                            <a href="/web/privacy.html?tabs=2">Content Speacification</a>
+                            <a href={config.webroot + "/privacy.html?tabs=2"}>Content Speacification</a>
                         </li>
                     </ul>
                     <div className="cp">
