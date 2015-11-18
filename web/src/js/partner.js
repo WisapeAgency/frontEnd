@@ -5,6 +5,7 @@ require('../css/base.less');
 require('../css/partner.less');
 var React = require('react');
 var Footer = require('./footer');
+var config = require('../../config');
 var $ = require('jquery');
 
 var PartnerHeader = React.createClass({
@@ -12,10 +13,10 @@ var PartnerHeader = React.createClass({
         return (
             <div className="partner-header">
                 <div className="w">
-                    <div className="logo"></div>
+                    <a href={config.webroot} className="logo"></a>
                     <h3>Global Wisape Partner Plan</h3>
                     <h4>Success lies in cooperation</h4>
-                    <a href="" className="btn-join">Join now</a>
+                    <a href="#join" className="btn-join">Join now</a>
                 </div>
             </div>
         );
@@ -161,7 +162,7 @@ var PartnerAddition = React.createClass({
 var PartnerJoin = React.createClass({
     render: function(){
         return (
-            <div className="join">
+            <div className="join" id="join">
                 <div className="w">
                     <h3>Join Beta Here for FREE</h3>
                     <div className="line"></div>
