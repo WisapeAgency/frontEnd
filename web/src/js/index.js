@@ -20,7 +20,7 @@ var IndexHeader = React.createClass({
                             <a href={config.downloadUrl.google} className="btn-google">google play</a>
                             <a href={config.downloadUrl.apk} className="btn-apk">apk</a>
                         </div>
-                        <a href="" className="join">Join Global Parterners Plan</a>
+                        <a href={config.webroot + "/partner.html"} className="join">Join Global Parterners Plan</a>
                     </div>
                     <div className="phone"></div>
                 </div>

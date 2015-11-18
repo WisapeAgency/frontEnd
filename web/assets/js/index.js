@@ -59,7 +59,7 @@
 	    displayName: 'IndexHeader',
 
 	    render: function render() {
-	        return React.createElement('div', { className: 'index-header' }, React.createElement('div', { className: 'w' }, React.createElement('div', { className: 'info' }, React.createElement('a', { href: '#', className: 'logo' }), React.createElement('h3', null, 'Create and Share'), React.createElement('p', null, 'your stunning business story worldwide'), React.createElement('div', { className: 'download' }, React.createElement('a', { href: config.downloadUrl.google, className: 'btn-google' }, 'google play'), React.createElement('a', { href: config.downloadUrl.apk, className: 'btn-apk' }, 'apk')), React.createElement('a', { href: '', className: 'join' }, 'Join Global Parterners Plan')), React.createElement('div', { className: 'phone' })));
+	        return React.createElement('div', { className: 'index-header' }, React.createElement('div', { className: 'w' }, React.createElement('div', { className: 'info' }, React.createElement('a', { href: '#', className: 'logo' }), React.createElement('h3', null, 'Create and Share'), React.createElement('p', null, 'your stunning business story worldwide'), React.createElement('div', { className: 'download' }, React.createElement('a', { href: config.downloadUrl.google, className: 'btn-google' }, 'google play'), React.createElement('a', { href: config.downloadUrl.apk, className: 'btn-apk' }, 'apk')), React.createElement('a', { href: config.webroot + "/partner.html", className: 'join' }, 'Join Global Parterners Plan')), React.createElement('div', { className: 'phone' })));
 	    }
 	});
 
@@ -21024,12 +21024,7 @@
 	    displayName: 'Footer',
 
 	    render: function render() {
-	        //var linksData = ['Terms of Service','Privacy Policy','Content Specification'];
-	        //var links = linksData.map(function (item,v) {
-	        //    var selected = this.state.selected;
-	        //    return <a href="javascript:void(0)" data-order={v} className={(v === this.state.selected) ? 'selected' : ""} onClick={this.handleOnClick}>{item}</a>;
-	        //}, this);
-	        return React.createElement('div', { className: 'footer' }, React.createElement('div', { className: 'w' }, React.createElement('ul', { className: 'my-links' }, React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-1' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-2' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-3' })), React.createElement('li', null, React.createElement('a', { href: '', className: 'my-links-4' }))), React.createElement('ul', { className: 'links' }, React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=0" }, 'Terms of Service')), React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=1" }, 'Privacy of Policy')), React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=2" }, 'Content Speacification'))), React.createElement('div', { className: 'cp' }, React.createElement('s', null), React.createElement('p', null, '@2015 Wisape all rights reserved'))));
+	        return React.createElement('div', { className: 'footer' }, React.createElement('div', { className: 'w' }, React.createElement('ul', { className: 'my-links' }, React.createElement('li', null, React.createElement('a', { href: 'mailto:' + config.shareUrl.email, target: '_blank', className: 'my-links-1' })), React.createElement('li', null, React.createElement('a', { href: config.shareUrl.facebook, target: '_blank', className: 'my-links-2' })), React.createElement('li', null, React.createElement('a', { href: config.shareUrl.twiter, target: '_blank', className: 'my-links-3' })), React.createElement('li', null, React.createElement('a', { href: config.shareUrl.google, target: '_blank', className: 'my-links-4' }))), React.createElement('ul', { className: 'links' }, React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=0" }, 'Terms of Service')), React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=1" }, 'Privacy of Policy')), React.createElement('li', null, React.createElement('a', { href: config.webroot + "/privacy.html?tabs=2" }, 'Content Speacification'))), React.createElement('div', { className: 'cp' }, React.createElement('s', null), React.createElement('p', null, '@2015 Wisape all rights reserved'))));
 	    }
 	});
 
@@ -30264,10 +30259,10 @@
 	        apk: "http://weibo.com"
 	    },
 	    shareUrl: {
-	        email: "",
-	        facebook: "",
-	        twiter: "",
-	        google: ""
+	        email: "support@wisape.com",
+	        facebook: "https://www.facebook.com/Wisape-Story-Builder-968758586520540/",
+	        twiter: "https://twitter.com/WisapeAgency ",
+	        google: "https://plus.google.com/+AgencyWisape/about"
 	    }
 	};
 

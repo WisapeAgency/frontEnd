@@ -9,19 +9,14 @@ console.info(config.webroot);
 
 var Footer = React.createClass({
     render: function(){
-        //var linksData = ['Terms of Service','Privacy Policy','Content Specification'];
-        //var links = linksData.map(function (item,v) {
-        //    var selected = this.state.selected;
-        //    return <a href="javascript:void(0)" data-order={v} className={(v === this.state.selected) ? 'selected' : ""} onClick={this.handleOnClick}>{item}</a>;
-        //}, this);
         return (
             <div className="footer">
                 <div className="w">
                     <ul  className="my-links">
-                        <li><a href=""  className="my-links-1"></a></li>
-                        <li><a href=""  className="my-links-2"></a></li>
-                        <li><a href=""  className="my-links-3"></a></li>
-                        <li><a href=""  className="my-links-4"></a></li>
+                        <li><a href={'mailto:' + config.shareUrl.email}  target="_blank" className="my-links-1"></a></li>
+                        <li><a href={config.shareUrl.facebook} target="_blank"   className="my-links-2"></a></li>
+                        <li><a href={config.shareUrl.twiter} target="_blank"   className="my-links-3"></a></li>
+                        <li><a href={config.shareUrl.google} target="_blank"  className="my-links-4"></a></li>
                     </ul>
                     <ul className="links">
                         <li>
