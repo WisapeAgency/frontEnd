@@ -13,7 +13,7 @@ var Footer = React.createClass({
             <div className="footer">
                 <div className="w">
                     <ul  className="my-links">
-                        <li><a href={'mailto:' + config.shareUrl.email}  target="_blank" className="my-links-1"></a></li>
+                        <li><a href={'mailto:' + config.shareUrl.email} className="my-links-1"></a></li>
                         <li><a href={config.shareUrl.facebook} target="_blank"   className="my-links-2"></a></li>
                         <li><a href={config.shareUrl.twiter} target="_blank"   className="my-links-3"></a></li>
                         <li><a href={config.shareUrl.google} target="_blank"  className="my-links-4"></a></li>
