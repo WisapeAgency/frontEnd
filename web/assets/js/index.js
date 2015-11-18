@@ -59,7 +59,7 @@
 	    displayName: 'IndexHeader',
 
 	    render: function render() {
-	        return React.createElement('div', { className: 'index-header' }, React.createElement('div', { className: 'w' }, React.createElement('div', { className: 'info' }, React.createElement('a', { href: '#', className: 'logo' }), React.createElement('h3', null, 'Create and Share'), React.createElement('p', null, 'your stunning business story worldwide'), React.createElement('div', { className: 'download' }, React.createElement('a', { href: config.downloadUrl.google, className: 'btn-google' }, 'google play'), React.createElement('a', { href: config.downloadUrl.apk, className: 'btn-apk' }, 'apk')), React.createElement('a', { href: config.webroot + "/partner.html", className: 'join' }, 'Join Global Parterners Plan')), React.createElement('div', { className: 'phone' })));
+	        return React.createElement('div', { className: 'index-header' }, React.createElement('div', { className: 'w' }, React.createElement('div', { className: 'info' }, React.createElement('a', { href: '#', className: 'logo' }), React.createElement('h3', null, 'Create and Share'), React.createElement('p', null, 'your stunning business story worldwide'), React.createElement('div', { className: 'download' }, React.createElement('a', { href: config.downloadUrl.google, style: { "display": "none" }, className: 'btn-google' }, 'google play'), React.createElement('a', { href: config.downloadUrl.apk, className: 'btn-apk' }, 'apk')), React.createElement('a', { style: { "display": "none" }, href: config.webroot + "/partner.html", className: 'join' }, 'Join Global Parterners Plan')), React.createElement('div', { className: 'phone' })));
 	    }
 	});
 

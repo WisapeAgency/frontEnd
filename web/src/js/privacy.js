@@ -6,6 +6,7 @@ require('../css/privacy.less');
 var $ = require('jquery');
 var React = require('react');
 var Footer = require('./footer');
+var config = require('../../config');
 
 var tabsData = ['Terms of Service','Privacy Policy','Content Specification'];
 var PrivacyMain = React.createClass({
@@ -41,8 +42,8 @@ var PrivacyMain = React.createClass({
             <div className="privacy-main">
 
                 <div className="w">
-                    <div className="logo">
-                    </div>
+                    <a href={config.webroot} className="logo">
+                    </a>
                     <div className="tabs-nav">
                         {tabs}
                     </div>

@@ -17,10 +17,10 @@ var IndexHeader = React.createClass({
                         <h3>Create and Share</h3>
                         <p>your stunning business story worldwide</p>
                         <div className="download">
-                            <a href={config.downloadUrl.google} className="btn-google">google play</a>
-                            <a href={config.downloadUrl.apk} className="btn-apk">apk</a>
+                            <a href={config.downloadUrl.google} style={{"display":"none"}} className="btn-google">google play</a>
+                            <a href={config.downloadUrl.apk}   className="btn-apk">apk</a>
                         </div>
-                        <a href={config.webroot + "/partner.html"} className="join">Join Global Parterners Plan</a>
+                        <a style={{"display":"none"}}  href={config.webroot + "/partner.html"} className="join">Join Global Parterners Plan</a>
                     </div>
                     <div className="phone"></div>
                 </div>
