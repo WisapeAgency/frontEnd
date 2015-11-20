@@ -6,7 +6,7 @@ var path = require('path');
 var webpack = require('webpack');
 var config = require('./config');
 var debug = process.env.NODE_ENV !== 'production';
-//var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 console.info(debug);
 module.exports = {
     entry: {
@@ -46,8 +46,8 @@ module.exports = {
 
     //插件项
    plugins: [
-       //commonsPlugin
-       //new webpack.optimize.MinChunkSizePlugin(minSize),
+       commonsPlugin
+       //new webpack.optimize.MinChunkSizePlugin(minSize)
 
    ]
 };
