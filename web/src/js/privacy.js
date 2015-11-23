@@ -15,7 +15,6 @@ var PrivacyMain = React.createClass({
         var index = 0;
         if(hrefParms) {
             index = parseInt(hrefParms.split("&")[0].split("=")[1]);
-            console.info(index);
         }
 
         return {selected: index};

@@ -160,9 +160,19 @@ var PartnerAddition = React.createClass({
 });
 
 var PartnerJoin = React.createClass({
+    getInitialState: function() {
+        return {tip: []}
+    },
+    handleClickSubmit: function () {
+        this.setState({tip: <Tips tipType="errow" clickCallback={this.handleClickCloseCb} tipTitle="Sorry!" tipCnt="Submission failed, please try again." />});
+    },
+    handleClickCloseCb: function(){
+        this.setState({tip: []});
+    },
     render: function(){
+        var tip = this.state.tip;
         return (
-            <div className="join" id="join">
+            <div className="join" id="join" ref="join">
                 <div className="w">
                     <h3>Join Beta Here for FREE</h3>
                     <div className="line"></div>
@@ -208,16 +218,43 @@ var PartnerJoin = React.createClass({
                                 </div>
                             </div>
                             <div className="f-cb"></div>
-                            <button>Send Message</button>
+                            <a className="btn-submit" onClick={this.handleClickSubmit}>Send Message</a>
                         </form>
                     </div>
                 </div>
+                {tip}
             </div>
         );
     }
 });
 
+var Tips = React.createClass({
+    //handleOnClickClose: function () {
+    //    var tips = this.refs.tip.getDOMNode();
+    //    tips.remove();
+    //},
+    render: function(){
+        return (
+            <div ref="tip">
+                <div className="mask"></div>
+                <div className={this.props.tipType == "success" ? "tips success" : "tips errow"}>
+                    <span className="close" onClick={this.props.clickCallback}></span>
+                    <s></s>
+                    <h3>{this.props.tipTitle}</h3>
+                    <p>{this.props.tipCnt}
+                    </p>
+                    {this.props.tipType == "success" && <a href="http://baidu.com"  onClick={this.props.clickCallback} target="_blank" className="btn-facebook"></a>}
+                </div>
+            </div>
+
+        );
+    }
+});
+
 var Partner = React.createClass({
+    getInitialState: function() {
+        return {tipState: 'hide'}
+    },
     render: function(){
         return (
             <div className="Partner">
@@ -228,6 +265,7 @@ var Partner = React.createClass({
                 <PartnerAddition />
                 <PartnerJoin />
                 <Footer />
+
             </div>
         );
     }

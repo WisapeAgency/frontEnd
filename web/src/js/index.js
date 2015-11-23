@@ -20,7 +20,7 @@ var IndexHeader = React.createClass({
                             <a href={config.downloadUrl.google} style={{"display":"none"}} className="btn-google">google play</a>
                             <a href={config.downloadUrl.apk}   className="btn-apk">apk</a>
                         </div>
-                        <a style={{"display":"none"}}  href={config.webroot + "/partner.html"} className="join">Join Global Parterners Plan</a>
+                        <a  href={config.webroot + "/partner.html"} className="join">Join Global Parterners Plan</a>
                     </div>
                     <div className="phone"></div>
                 </div>
@@ -28,7 +28,6 @@ var IndexHeader = React.createClass({
         );
     }
 });
-
 
 var IndexFeature = React.createClass({
     render: function(){
@@ -116,8 +115,6 @@ var Variety = React.createClass({
         );
     }
 });
-
-
 
 var Index = React.createClass({
     render: function(){
