@@ -57,7 +57,7 @@ var PartnerVip = React.createClass({
                         <div className="item">
                             <strong>Step1</strong>
                             <p>Submit your application on our website</p>
-                            <a href="">Submit</a>
+                            <a href="#join" >Submit</a>
                         </div>
                         <div className="item">
                             <strong>Step2</strong>
@@ -187,11 +187,11 @@ var PartnerJoin = React.createClass({
                                 <div className="dd">
                                     <ul>
                                         <li className="fore1">
-                                            <div className="ipt f-fl"><s className="ico-people"></s><input type="text" placeholder="Firsrt Name" name="first-name"/></div>
-                                             <div className="ipt f-fr"><s classNameico-people></s><input type="text" placeholder="Last Name" name="last-name"/></div>
+                                            <div className="ipt f-fl"><s className="ico-people"></s><input type="text" required placeholder="Firsrt Name" name="first-name"/></div>
+                                             <div className="ipt f-fr"><s classNameico-people></s><input type="text" required placeholder="Last Name" name="last-name"/></div>
                                         </li>
                                         <li>
-                                            <div className="ipt"><s className="ico-company"></s><input type="text" name="company" placeholder="Company Name"/></div>
+                                            <div className="ipt"><s className="ico-company"></s><input type="text" required name="company" placeholder="Company Name"/></div>
                                         </li>
                                         <li>
                                             <div className="select-box">
@@ -202,7 +202,7 @@ var PartnerJoin = React.createClass({
                                         <li>
                                             <div className="ipt">
                                                 <s className="ico-email"></s>
-                                                <input type="text" name="email" placeholder="email"/>
+                                                <input type="email" name="email" required placeholder="email"/>
                                             </div>
                                         </li>
                                     </ul>
