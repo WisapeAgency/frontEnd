@@ -205,16 +205,16 @@ var PartnerJoin = React.createClass({
 
             type: 'GET',
 
-            url: 'http://106.75.196.252/index.php/site/createPartner' ,
+            url: 'http://106.75.196.252/index.php/site/createPartner',
 
             data: {
                 user_email:formdata.email,
                 first_name: formdata.firstname,
                 last_name:formdata.lastname,
-                country:"国家代码",
-                company_name:"公司名称",
-                message:"内容主体"
-            } ,
+                country:formdata.country,
+                company_name:formdata.company,
+                message:formdata.msg
+            },
 
             success: function(data){
                 if(data.success == 1) {
@@ -283,7 +283,7 @@ You can join our Global Partner Group on Facebook." />});
                                         <li>
                                             <div className="ipt">
                                                 <s className="ico-email"></s>
-                                                <input type="email" name="email" required placeholder="email"/>
+                                                <input type="text" name="email" required placeholder="email"/>
                                                 <div className="err-msg"><i></i><span>It seems to be invalid Email</span></div>
                                             </div>
                                         </li>
