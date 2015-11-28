@@ -11,6 +11,21 @@ var IndexHeader = React.createClass({
     render: function() {
         return (
             <div className="index-header">
+                <div className="bg-l-t">
+                    <img src="./assets/img/bg-left-top.png" alt=""/>
+                </div>
+                <div className="bg-l-b">
+                    <img src="./assets/img/bg-left-bottom.png" alt=""/>
+                </div>
+                <div className="bg-r-t">
+                    <img src="./assets/img/bg-right-top.png" alt=""/>
+                </div>
+                <div className="bg-r-b">
+                    <img src="./assets/img/bg-right-bottom.png" alt=""/>
+                </div>
+                <div className="bg-t">
+                    <img src="./assets/img/bg-top.png" alt=""/>
+                </div>
                 <div className="w">
                     <div className="info">
                         <a href="#" className="logo"></a>

@@ -17,8 +17,8 @@ module.exports = {
         privacy: path.resolve(__dirname, './src/js/privacy.js')
         },
     output: {
-        path: path.resolve(__dirname, './assets/js'),
-        publicPath: path.resolve(__dirname, config.webroot + '/assets/js'),
+        path: path.resolve(__dirname, './assets/js/'),
+        publicPath: path.resolve(__dirname, config.webroot + '/assets/js/'),
         filename: '[name].js'
     },
 
@@ -30,13 +30,7 @@ module.exports = {
             //{test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
             {test: /\.scss$/, loader: "style!css!sass"},
             {test: /\.less/,loader: 'style-loader!css-loader!less-loader'},
-            {test: /\.(jpg|png)$/, loader: "url-loader?limit=8192&name=/i/[hash:8].[name].[ext]"},
-            {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff"},
-            {test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff2"},
-            {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/octet-stream"},
-            {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file"},
-            {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml"}
-
+            {test: /\.(jpg|png)$/, loader: "url-loader?limit=8192&name=/i/[hash:8].[name].[ext]"}
         ]
     },
 

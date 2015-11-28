@@ -2,6 +2,57 @@
   background: url("../i/bg.jpg") top center no-repeat;
   height: 794px;
   width:100%;
+  position: relative;
+
+
+  .bg-l-t {
+    position: absolute;
+    left:0;
+    top:0;
+
+    img {
+      width: 100%;
+    }
+  }
+  .bg-l-b {
+    position: absolute;
+    left:0;
+    bottom:0;
+
+    img {
+      width: 100%;
+    }
+  }
+  .bg-t {
+    position: absolute;
+    top:0;
+    left:30%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bg-r-t {
+    position: absolute;
+    right:0;top:0;
+    text-align: right;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bg-r-b {
+    position: absolute;
+    right:0;bottom:0;
+    text-align: right;
+
+    img {
+      width: 100%;
+    }
+  }
+
 
 
   .w {
@@ -39,14 +90,14 @@
       display: block;
       width:360px;
       height: 60px;
-      border:2px solid #a17242;
+      border:2px solid #000;
       box-shadow: 0 4px 4px rgba(0,0,0,0.13);
       border-radius: 3px;
       line-height: 60px;
       text-align: center;
-      font-size:16px;
-      color:#a17242;
-      margin-top:70px;
+      font-size:20px;
+      color:#000;
+      margin-top:50px;
     }
 
     .download {
@@ -194,3 +245,51 @@
     }
   }
 }
+
+@media screen and(max-width:1400px) {
+  .index-header .bg-l-b img ,.index-header .bg-l-t img,.index-header .bg-r-t img ,.index-header .bg-r-b img,.index-header .bg-r-b img{
+    width:50%;
+  }
+}
+
+@media screen and(max-width:1200px) {
+  body{
+
+    .w {
+      width:100%;
+    }
+    .feature {
+      .item {
+        width:30%;
+        padding:0 1.5%;
+      }
+    }
+
+    .variety {
+      .item {
+        width:25%;
+      }
+    }
+
+    .index-header {
+      .info {
+        h3 {
+          font-size:30px;
+        }
+
+        p{
+          font-size:20px;
+        }
+
+        .join {
+          width:260px;
+          height: 40px;
+          font-size:12px;
+          line-height: 40px;
+        }
+      }
+
+
+    }
+  }
+ }
