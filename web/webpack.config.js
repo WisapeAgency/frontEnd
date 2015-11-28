@@ -18,7 +18,7 @@ module.exports = {
         },
     output: {
         path: path.resolve(__dirname, './assets/js/'),
-        publicPath: path.resolve(__dirname, config.webroot + '/assets/js/'),
+        publicPath: config.webroot + '/assets/js/',
         filename: '[name].js'
     },
 
@@ -30,7 +30,7 @@ module.exports = {
             //{test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
             {test: /\.scss$/, loader: "style!css!sass"},
             {test: /\.less/,loader: 'style-loader!css-loader!less-loader'},
-            {test: /\.(jpg|png)$/, loader: "url-loader?limit=8192&name=/i/[hash:8].[name].[ext]"}
+            {test: /\.(jpg|png|gif)$/, loader: "url-loader?limit=8192&name=/i/[hash:8].[name].[ext]"}
         ]
     },
 

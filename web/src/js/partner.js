@@ -201,11 +201,13 @@ var PartnerJoin = React.createClass({
             postFlag = true;
         });
 
+        that.setState({tip: <Loading />});
+
         postFlag && $.ajax({
 
             type: 'GET',
 
-            url: 'http://106.75.196.252/index.php/site/createPartner',
+            url: config.requestUrl ,
 
             data: {
                 user_email:formdata.email,
@@ -217,6 +219,7 @@ var PartnerJoin = React.createClass({
             },
 
             success: function(data){
+                that.setState({loading: []});
                 if(data.success == 1) {
                     that.setState({tip: <Tips tipType="success" clickCallback={that.handleClickCloseCb} tipTitle="Congratulation!" tipCnt="Your subscription has been sent to us.
 We will contact you by email the first time.
@@ -305,6 +308,15 @@ You can join our Global Partner Group on Facebook." />});
                     </div>
                 </div>
                 {tip}
+            </div>
+        );
+    }
+});
+
+var Loading = React.createClass({
+    render: function(){
+        return (
+            <div className="loading">
             </div>
         );
     }
