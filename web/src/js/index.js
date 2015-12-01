@@ -35,7 +35,7 @@ var IndexHeader = React.createClass({
                             <a href={config.downloadUrl.google} style={{"display":"none"}} className="btn-google">google play</a>
                             <a href={config.downloadUrl.apk}   className="btn-apk">apk</a>
                         </div>
-                        <a  href={config.webroot + "/partner.html"} className="join">Join Global Parterners Plan</a>
+                        <a  href={config.webroot + "/partner.html"} className="join">Join Global Partners Plan</a>
                     </div>
                     <div className="phone"></div>
                 </div>
@@ -64,7 +64,7 @@ var IndexFeature = React.createClass({
                         </h3>
                         <p>
                             Wisape offers various templates as your options. Based on scene, select the
-                            appropriate template and replaces them with your own content, it's done
+                            appropriate template and replaces them with your own content, it's done.
                         </p>
                     </div>
                     <div className="item fore3">
